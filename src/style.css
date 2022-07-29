@@ -5,6 +5,11 @@
   --light-tile-color: #d1beae;
 }
 body {
+  background-color: var(--background-color);
+  margin: 0 auto;
+}
+.main-column {
+  margin: 0 10%;
   background-color: #000000;
 }
 
@@ -24,13 +29,13 @@ h1 {
 }
 
 .hero {
-  margin-top: 30px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 .hero-image {
   height: 80;
   position: center;
-  repeat: no-repeat;
-  size: cover;
+  width: cover;
   margin: 0 auto;
 }
 h3 {
