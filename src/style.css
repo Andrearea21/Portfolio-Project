@@ -3,6 +3,9 @@
   --background-color: #837171;
   --dark-tile-color: #3e3b3b;
   --light-tile-color: #d1beae;
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
   background-color: #000000;
@@ -10,7 +13,6 @@ body {
 }
 .main-column {
   margin: 0 10%;
-  background-color: #000000;
 }
 
 h1,
@@ -42,12 +44,24 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-h3 {
+.project-image {
+  border: 40px solid;
+  color: var(--font-color);
+  border-radius: 15%;
+}
+h3,
+h4 {
   font-family: "Inter";
   font-size: 25px;
-  text-align: center;
   color: var(--font-color);
 }
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: start;
+}
+
 .button {
   background-color: var(--dark-tile-color);
   border-color: var(--dark-tile-color);
@@ -58,6 +72,7 @@ h3 {
   margin-top: 20px;
   padding-top: 35px;
   border-radius: 15px;
+  box-shadow: var(--box-shadow);
 }
 .button:hover {
   background-color: var(--dark-tile-color);
@@ -66,4 +81,75 @@ h3 {
 
 .space {
   margin: 50px;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--dark-tile-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  width: fit-content;
+  border-radius: 15%;
+}
+.contact-link:hover {
+  background-color: var(--dark-tile-color);
+  opacity: 50%;
+}
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 25px;
+  }
 }
