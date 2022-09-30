@@ -1,6 +1,7 @@
 :root {
   --font-color: #a49090;
-  --background-color: #837171;
+  /* --background-color: #837171; */
+  --background-color: #000000;
   --dark-tile-color: #3e3b3b;
   --light-tile-color: #d1beae;
   --primary-color: #6c63ff;
@@ -46,7 +47,7 @@ h1 {
 }
 .project-image {
   border: 40px solid;
-  color: var(--font-color);
+  color: var(--dark-tile-color);
   border-radius: 15%;
 }
 h3,
