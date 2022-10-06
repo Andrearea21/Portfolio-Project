@@ -25,10 +25,10 @@ h2 {
   color: var(--font-color);
 }
 h2 {
-  font-size: 30px;
+  font-size: 50px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .hero {
@@ -63,19 +63,31 @@ h4 {
   text-align: start;
 }
 
-.button {
+.button,
+.contact-button {
   background-color: var(--dark-tile-color);
   border-color: var(--dark-tile-color);
   text-align: center;
   text-decoration: none;
-  height: 100px;
-  width: 180px;
-  margin-top: 20px;
-  padding-top: 35px;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
 }
-.button:hover {
+.button {
+  height: 100px;
+  width: 180px;
+  padding-top: 35px;
+  margin-top: 20px;
+}
+.contact-button {
+  color: var(--font-color);
+  margin-top: 10px;
+  padding: 25px;
+  font-size: larger;
+  height: fit-content;
+}
+
+.button:hover,
+.contact-button:hover {
   background-color: var(--dark-tile-color);
   opacity: 50%;
 }
@@ -153,4 +165,32 @@ p {
   h2 {
     font-size: 25px;
   }
+}
+.about-text {
+  color: var(--font-color);
+  background-color: transparent;
+  text-align: justify;
+}
+.myPicture {
+  height: auto;
+  border-radius: 5px;
+}
+.about-container {
+  text-align: center;
+  border: 2px solid;
+}
+/* .about-header {
+  
+} */
+a:active {
+  color: none;
+  text-decoration: none;
+}
+a:hover,
+#contact:hover {
+  color: var(--light-tile-color);
+}
+a {
+  color: var(--font-color);
+  text-decoration: none;
 }
