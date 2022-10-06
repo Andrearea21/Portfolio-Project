@@ -96,15 +96,6 @@ h4 {
   margin: 50px;
 }
 
-p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -141,14 +132,7 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
 
-.about-paragraphs p {
-  margin: 10px;
-}
 
 .email-link {
   display: flex;
@@ -170,6 +154,12 @@ p {
   color: var(--font-color);
   background-color: transparent;
   text-align: justify;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
 }
 .myPicture {
   height: auto;
@@ -177,11 +167,9 @@ p {
 }
 .about-container {
   text-align: center;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
-/* .about-header {
-  
-} */
+
 a:active {
   color: none;
   text-decoration: none;
